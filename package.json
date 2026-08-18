@@ -1,0 +1,23 @@
+{
+	"name": "firefox-simple-one-line",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write --list-different ."
+	},
+	"devDependencies": {
+		"prettier": "^3.9.6",
+		"prettier-plugin-css-order": "^2.2.0"
+	},
+	"prettier": {
+		"endOfLine": "lf",
+		"objectWrap": "collapse",
+		"plugins": [
+			"prettier-plugin-css-order"
+		],
+		"printWidth": 80,
+		"tabWidth": 4,
+		"useTabs": true
+	}
+}
