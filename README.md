@@ -10,5 +10,5 @@ A simplistic one-liner Firefox CSS theme, targetting Nova UI.
 4. Navigate to `about:support` in Firefox.
 5. Locate the **Profile Directory** (or **Profile Folder** / **Show in Finder**) row and click **Open Directory** / **Open Folder**.
 6. Inside the profile folder, create a directory named `chrome` if it does not already exist.
-7. Copy `userChrome.css` into the `chrome` directory.
+7. Copy `userChrome.css` and the `theme` directory into the `chrome` directory.
 8. Restart Firefox.
