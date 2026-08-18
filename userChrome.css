@@ -1,3 +1,6 @@
+@import url("tab-close-favicon.css");
+@import url("accent-colour.css");
+
 /* Container & Window Dragging */
 #navigator-toolbox {
 	display: flex !important;
@@ -100,36 +103,6 @@
 .tabbrowser-tab {
 	height: 44px !important;
 	min-height: 44px !important;
-}
-
-/* Favicon Container: Identical 24x24 Slot */
-.tab-icon-stack {
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
-	margin: 0 4px 0 0 !important;
-	padding: 0 !important;
-	width: 24px !important;
-	min-width: 24px !important;
-	height: 24px !important;
-	min-height: 24px !important;
-}
-
-.tab-icon-image {
-	margin: 0 !important;
-	padding: 0 !important;
-	width: 16px !important;
-	height: 16px !important;
-}
-
-.tab-icon-stack[hidden],
-.tabbrowser-tab:not([image]) .tab-icon-stack {
-	display: flex !important;
-	visibility: hidden !important;
-	margin: 0 4px 0 0 !important;
-	width: 24px !important;
-	min-width: 24px !important;
-	height: 24px !important;
 }
 
 /* Non-draggable Interactive Controls */
@@ -314,31 +287,6 @@ toolbarseparator,
 .titlebar-buttonbox {
 	margin: 0 !important;
 	padding: 0 !important;
-}
-
-/* Close Button: Identical 24x24 Slot & Centred 12px Icon */
-.tabbrowser-tab .tab-close-button {
-	display: none !important;
-	order: -1 !important;
-	box-sizing: border-box !important;
-	margin: 0 4px 0 0 !important;
-	border-radius: 50% !important;
-	padding: 6px !important;
-	width: 24px !important;
-	min-width: 24px !important;
-	max-width: 24px !important;
-	height: 24px !important;
-	min-height: 24px !important;
-	max-height: 24px !important;
-}
-
-.tabbrowser-tab:hover .tab-icon-stack,
-.tabbrowser-tab:hover .tab-throbber {
-	display: none !important;
-}
-
-.tabbrowser-tab:hover .tab-close-button {
-	display: flex !important;
 }
 
 /* Customisation Mode Container & Palette Grid Layout */
