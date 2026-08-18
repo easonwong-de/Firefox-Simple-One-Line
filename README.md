@@ -1,3 +1,3 @@
 # Firefox Simple One Line
 
-A Simplistic one-liner CSS theme for Firefox, targetting Nova UI.
+A simplistic one-liner Firefox CSS theme, targetting Nova UI.
