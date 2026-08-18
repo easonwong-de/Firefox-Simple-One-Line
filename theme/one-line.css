@@ -121,7 +121,8 @@
 .tabbrowser-tab::after,
 #tabbrowser-tabs::before,
 #tabbrowser-tabs::after,
-toolbarseparator,
+#nav-bar toolbarseparator,
+#TabsToolbar toolbarseparator,
 #vertical-pinned-tabs-splitter {
 	display: none !important;
 }

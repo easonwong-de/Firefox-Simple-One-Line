@@ -1,7 +1,19 @@
 :root {
-	--color-accent-primary: var(--toolbarbutton-icon-fill-attention) !important;
+	--color-accent-primary: var(
+		--urlbarview-background-color-selected,
+		light-dark(var(--color-violet-50), var(--color-violet-30))
+	) !important;
 	--focus-outline-color: var(--color-accent-primary) !important;
 	--link-color: var(--color-accent-primary) !important;
 	--link-color-hover: var(--color-accent-primary-hover) !important;
 	--link-color-active: var(--color-accent-primary-active) !important;
+}
+
+.urlbarView-row[selected] {
+	background-color: var(--color-accent-primary) !important;
+	color: var(--color-accent-primary-contrast, #ffffff) !important;
+
+	:is(.urlbarView-title, .urlbarView-url, .urlbarView-action) {
+		color: var(--color-accent-primary-contrast, #ffffff) !important;
+	}
 }

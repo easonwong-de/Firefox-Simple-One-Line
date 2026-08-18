@@ -1,0 +1,96 @@
+/* Minimalist style extension & widget overflow menu */
+
+#unified-extensions-view:has(.unified-extensions-item),
+#widget-overflow-mainView {
+	width: var(--panel-width, 320px) !important;
+	min-width: var(--panel-width, 320px) !important;
+
+	.widget-overflow-list,
+	#widget-overflow-fixed-list,
+	.overflowed-extensions-list,
+	#unified-extensions-area {
+		display: grid !important;
+		grid-template-columns: repeat(5, 1fr) !important;
+		gap: 4px !important;
+		justify-content: start !important;
+		align-content: start !important;
+		padding: 6px !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+
+		& > .toolbarbutton-1,
+		& > toolbarpaletteitem,
+		& > .unified-extensions-item {
+			display: flex !important;
+			justify-content: center !important;
+			align-items: center !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+			height: auto !important;
+			min-height: 0 !important;
+			aspect-ratio: 1 / 1 !important;
+
+			.unified-extensions-item-row-wrapper {
+				display: flex !important;
+				justify-content: center !important;
+				align-items: center !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 100% !important;
+				height: 100% !important;
+			}
+
+			& > .toolbarbutton-1,
+			.unified-extensions-item-action-button {
+				display: flex !important;
+				justify-content: center !important;
+				align-items: center !important;
+				box-sizing: border-box !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 100% !important;
+				height: 100% !important;
+				min-height: 0 !important;
+				max-height: none !important;
+				aspect-ratio: 1 / 1 !important;
+				border-radius: var(--toolbarbutton-border-radius, 24px) !important;
+
+				.toolbarbutton-badge-stack {
+					display: flex !important;
+					justify-content: center !important;
+					align-items: center !important;
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+
+				image,
+				.toolbarbutton-icon {
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+			}
+		}
+
+		& > toolbarpaletteitem#wrapper-edit-controls,
+		& > toolbarpaletteitem#wrapper-zoom-controls,
+		& > .toolbaritem-combined-buttons#zoom-controls,
+		& > .toolbaritem-combined-buttons#edit-controls {
+			grid-column: span 3;
+			aspect-ratio: auto !important;
+		}
+	}
+
+	.unified-extensions-list,
+	.unified-extensions-item-contents,
+	.unified-extensions-item-menu-button,
+	.subviewbutton-nav::after,
+	toolbarbutton:not(
+			#zoom-reset-button,
+			#overflowMenu-customize-button,
+			#unified-extensions-manage-extensions
+		)
+		> .toolbarbutton-text {
+		display: none !important;
+	}
+}
