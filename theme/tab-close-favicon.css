@@ -15,6 +15,10 @@
 	min-height: 24px !important;
 }
 
+.tabbrowser-tab[pinned] .tab-icon-stack {
+	margin: 0 !important;
+}
+
 .tab-icon-image {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -30,6 +34,11 @@
 	width: 24px !important;
 	min-width: 24px !important;
 	height: 24px !important;
+	min-height: 24px !important;
+}
+
+.tabbrowser-tab[pinned]:not([image]) .tab-icon-stack {
+	margin: 0 !important;
 }
 
 /* Close Button: Identical 24x24 Slot & Centred 12px Icon */
@@ -48,11 +57,11 @@
 	max-height: 24px !important;
 }
 
-.tabbrowser-tab:hover .tab-icon-stack,
-.tabbrowser-tab:hover .tab-throbber {
+.tabbrowser-tab:not([pinned]):hover .tab-icon-stack,
+.tabbrowser-tab:not([pinned]):hover .tab-throbber {
 	display: none !important;
 }
 
-.tabbrowser-tab:hover .tab-close-button {
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
 	display: flex !important;
 }
