@@ -11,12 +11,12 @@
 	#unified-extensions-area {
 		display: grid !important;
 		grid-template-columns: repeat(5, 1fr) !important;
-		gap: 4px !important;
-		justify-content: start !important;
 		align-content: start !important;
+		justify-content: start !important;
+		gap: 4px !important;
+		box-sizing: border-box !important;
 		padding: 6px !important;
 		width: 100% !important;
-		box-sizing: border-box !important;
 
 		& > .toolbarbutton-1,
 		& > toolbarpaletteitem,
@@ -26,10 +26,10 @@
 			align-items: center !important;
 			margin: 0 !important;
 			padding: 0 !important;
+			aspect-ratio: 1 / 1 !important;
 			width: 100% !important;
 			height: auto !important;
 			min-height: 0 !important;
-			aspect-ratio: 1 / 1 !important;
 
 			.unified-extensions-item-row-wrapper {
 				display: flex !important;
@@ -48,13 +48,16 @@
 				align-items: center !important;
 				box-sizing: border-box !important;
 				margin: 0 !important;
+				border-radius: var(
+					--toolbarbutton-border-radius,
+					24px
+				) !important;
 				padding: 0 !important;
+				aspect-ratio: 1 / 1 !important;
 				width: 100% !important;
 				height: 100% !important;
 				min-height: 0 !important;
 				max-height: none !important;
-				aspect-ratio: 1 / 1 !important;
-				border-radius: var(--toolbarbutton-border-radius, 24px) !important;
 
 				.toolbarbutton-badge-stack {
 					display: flex !important;
