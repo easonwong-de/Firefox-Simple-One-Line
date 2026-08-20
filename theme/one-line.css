@@ -141,7 +141,7 @@
 	display: none !important;
 }
 
-#nav-bar[overflowing="true"] #nav-bar-overflow-button,
+#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
 #nav-bar-overflow-button[overflowing="true"] {
 	display: flex !important;
 }
@@ -170,7 +170,7 @@
 		padding-right: 80px !important;
 		padding-left: 80px !important;
 	}
-	#navigator-toolbox:has(#nav-bar[overflowing="true"]) {
+	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])) {
 		padding-right: 116px !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container {
@@ -193,7 +193,7 @@
 		z-index: 100 !important;
 		height: 32px !important;
 	}
-	#navigator-toolbox:has(#nav-bar[overflowing="true"])
+	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]))
 		#unified-extensions-button {
 		right: 78px !important;
 	}
@@ -206,7 +206,7 @@
 		z-index: 100 !important;
 		height: 32px !important;
 	}
-	#nav-bar[overflowing="true"] #nav-bar-overflow-button,
+	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
 	#nav-bar-overflow-button[overflowing="true"] {
 		display: flex !important;
 	}
@@ -228,7 +228,7 @@
 	#navigator-toolbox {
 		padding-right: 220px !important;
 	}
-	#navigator-toolbox:has(#nav-bar[overflowing="true"]) {
+	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])) {
 		padding-right: 256px !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container {
@@ -251,7 +251,7 @@
 		z-index: 100 !important;
 		height: 32px !important;
 	}
-	#navigator-toolbox:has(#nav-bar[overflowing="true"])
+	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]))
 		#unified-extensions-button {
 		right: 216px !important;
 	}
@@ -264,7 +264,7 @@
 		z-index: 100 !important;
 		height: 32px !important;
 	}
-	#nav-bar[overflowing="true"] #nav-bar-overflow-button,
+	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
 	#nav-bar-overflow-button[overflowing="true"] {
 		display: flex !important;
 	}

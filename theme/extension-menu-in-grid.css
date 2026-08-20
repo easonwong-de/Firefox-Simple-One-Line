@@ -5,6 +5,10 @@
 	width: var(--panel-width, 320px) !important;
 	min-width: var(--panel-width, 320px) !important;
 
+	.panel-subview-body {
+		padding: 0 !important;
+	}
+
 	.widget-overflow-list,
 	#widget-overflow-fixed-list,
 	.overflowed-extensions-list,
@@ -17,6 +21,10 @@
 		box-sizing: border-box !important;
 		padding: 6px !important;
 		width: 100% !important;
+
+		&:empty {
+			display: none !important;
+		}
 
 		& > .toolbarbutton-1,
 		& > toolbarpaletteitem,
