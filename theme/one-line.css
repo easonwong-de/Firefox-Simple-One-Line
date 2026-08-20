@@ -27,40 +27,45 @@
 #nav-bar {
 	display: flex !important;
 	position: static !important;
-	flex: 0 0 auto !important;
+	flex: 0 1 auto !important;
 	align-items: center !important;
 	order: 1 !important;
 	box-shadow: none !important;
 	border: none !important;
 	background: transparent !important;
+	min-width: 0 !important;
+	max-width: 100% !important;
 	height: 44px !important;
 	min-height: 44px !important;
 }
 
 #nav-bar-customization-target {
 	display: flex !important;
-	flex: 0 0 auto !important;
+	flex: 0 1 auto !important;
 	align-items: center !important;
 	background: transparent !important;
+	min-width: 0 !important;
+	max-width: 100% !important;
 }
 
 #urlbar-container {
-	flex: 0 1 320px !important;
-	min-width: 150px !important;
+	flex: 0 1 240px !important;
+	min-width: 100px !important;
 }
 
 /* Tab Bar in the Middle */
 #TabsToolbar {
 	display: flex !important;
 	position: static !important;
-	flex: 1 1 0% !important;
+	flex: 1 1 auto !important;
 	align-items: center !important;
 	order: 2 !important;
 	border: none !important;
 	background: transparent !important;
-	min-width: 0 !important;
+	min-width: 140px !important;
 	height: 44px !important;
 	min-height: 44px !important;
+	overflow: hidden !important;
 }
 
 /* Spacers */
@@ -71,29 +76,29 @@
 #TabsToolbar .toolbar-items,
 #TabsToolbar-customization-target {
 	display: flex !important;
-	flex: 1 1 0% !important;
+	flex: 1 1 auto !important;
 	align-items: center !important;
 	background: transparent !important;
 	width: 100% !important;
-	min-width: 0 !important;
+	min-width: 140px !important;
 	height: 44px !important;
 }
 
 #tabbrowser-tabs {
 	display: flex !important;
-	flex: 1 1 0% !important;
+	flex: 1 1 auto !important;
 	align-items: center !important;
 	width: 100% !important;
-	min-width: 0 !important;
+	min-width: var(--tab-min-width, 76px) !important;
 	height: 44px !important;
 }
 
 #tabbrowser-arrowscrollbox {
 	display: flex !important;
-	flex: 1 1 0% !important;
+	flex: 1 1 auto !important;
 	align-items: center !important;
 	width: 100% !important;
-	min-width: 0 !important;
+	min-width: var(--tab-min-width, 76px) !important;
 	height: 44px !important;
 }
 
