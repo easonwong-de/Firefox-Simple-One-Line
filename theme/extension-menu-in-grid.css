@@ -28,6 +28,7 @@
 
 		& > .toolbarbutton-1,
 		& > toolbarpaletteitem,
+		& > #personal-bookmarks,
 		& > .unified-extensions-item {
 			display: flex !important;
 			justify-content: center !important;
@@ -50,6 +51,7 @@
 			}
 
 			& > .toolbarbutton-1,
+			#bookmarks-toolbar-button,
 			.unified-extensions-item-action-button {
 				display: flex !important;
 				justify-content: center !important;
