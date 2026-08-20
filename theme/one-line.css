@@ -11,21 +11,53 @@
 
 	/* Non-macOS / Windows Layout Calculations */
 	--titlebar-buttons-width-win: calc(var(--titlebar-button-width) * 3);
-	--panelui-offset-win: calc(var(--titlebar-buttons-width-win) + var(--trailing-button-gap));
-	--overflow-offset-win: calc(var(--panelui-offset-win) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--ext-offset-win: calc(var(--panelui-offset-win) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--ext-offset-overflow-win: calc(var(--overflow-offset-win) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--toolbox-padding-win: calc(var(--ext-offset-win) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--toolbox-padding-overflow-win: calc(var(--ext-offset-overflow-win) + var(--trailing-button-size) + var(--trailing-button-gap));
+	--panelui-offset-win: calc(
+		var(--titlebar-buttons-width-win) + var(--trailing-button-gap)
+	);
+	--overflow-offset-win: calc(
+		var(--panelui-offset-win) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--ext-offset-win: calc(
+		var(--panelui-offset-win) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--ext-offset-overflow-win: calc(
+		var(--overflow-offset-win) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--toolbox-padding-win: calc(
+		var(--ext-offset-win) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--toolbox-padding-overflow-win: calc(
+		var(--ext-offset-overflow-win) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
 
 	/* macOS Layout Calculations */
 	--titlebar-width-mac: 80px;
 	--panelui-offset-mac: 6px;
-	--ext-offset-mac: calc(var(--panelui-offset-mac) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--overflow-offset-mac: calc(var(--panelui-offset-mac) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--ext-offset-overflow-mac: calc(var(--overflow-offset-mac) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--toolbox-padding-mac: calc(var(--ext-offset-mac) + var(--trailing-button-size) + var(--trailing-button-gap));
-	--toolbox-padding-overflow-mac: calc(var(--ext-offset-overflow-mac) + var(--trailing-button-size) + var(--trailing-button-gap) + 2px);
+	--ext-offset-mac: calc(
+		var(--panelui-offset-mac) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--overflow-offset-mac: calc(
+		var(--panelui-offset-mac) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--ext-offset-overflow-mac: calc(
+		var(--overflow-offset-mac) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--toolbox-padding-mac: calc(
+		var(--ext-offset-mac) + var(--trailing-button-size) +
+			var(--trailing-button-gap)
+	);
+	--toolbox-padding-overflow-mac: calc(
+		var(--ext-offset-overflow-mac) + var(--trailing-button-size) +
+			var(--trailing-button-gap) + 2px
+	);
 }
 
 /* Container & Window Dragging */
@@ -50,11 +82,11 @@
 
 #PersonalToolbar {
 	margin: 0 !important;
-	padding: 0 !important;
-	background: transparent !important;
-	background-color: transparent !important;
 	box-shadow: none !important;
 	border: none !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	padding: 0 !important;
 }
 
 /* Toolbar on the Left */
@@ -84,6 +116,7 @@
 
 #urlbar-container {
 	flex: 0 1 240px !important;
+	width: 240px !important;
 	min-width: 100px !important;
 }
 
@@ -180,7 +213,8 @@
 	display: none !important;
 }
 
-#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
+#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+	#nav-bar-overflow-button,
 #nav-bar-overflow-button[overflowing="true"] {
 	display: flex !important;
 }
@@ -209,13 +243,17 @@
 		padding-right: var(--toolbox-padding-mac) !important;
 		padding-left: var(--titlebar-width-mac) !important;
 	}
-	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])) {
+	#navigator-toolbox:has(
+		#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+	) {
 		padding-right: var(--toolbox-padding-overflow-mac) !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container {
 		display: flex !important;
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		left: 0 !important;
 		justify-content: center !important;
 		align-items: center !important;
@@ -226,33 +264,42 @@
 	}
 	#unified-extensions-button {
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--ext-offset-mac) !important;
 		bottom: auto !important;
 		z-index: 100 !important;
 		height: var(--trailing-button-size) !important;
 	}
-	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]))
+	#navigator-toolbox:has(
+			#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+		)
 		#unified-extensions-button {
 		right: var(--ext-offset-overflow-mac) !important;
 	}
 	#nav-bar-overflow-button {
 		display: none !important;
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--overflow-offset-mac) !important;
 		bottom: auto !important;
 		z-index: 100 !important;
 		height: var(--trailing-button-size) !important;
 	}
-	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
+	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+		#nav-bar-overflow-button,
 	#nav-bar-overflow-button[overflowing="true"] {
 		display: flex !important;
 	}
 	#PanelUI-button {
 		display: flex !important;
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--panelui-offset-mac) !important;
 		bottom: auto !important;
 		justify-content: center !important;
@@ -267,7 +314,9 @@
 	#navigator-toolbox {
 		padding-right: var(--toolbox-padding-win) !important;
 	}
-	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])) {
+	#navigator-toolbox:has(
+		#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+	) {
 		padding-right: var(--toolbox-padding-overflow-win) !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container {
@@ -286,9 +335,9 @@
 	#TabsToolbar .titlebar-buttonbox-container .titlebar-buttonbox {
 		display: flex !important;
 		align-items: stretch !important;
-		height: 100% !important;
 		margin: 0 !important;
 		padding: 0 !important;
+		height: 100% !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container .titlebar-button {
 		display: flex !important;
@@ -296,8 +345,8 @@
 		align-items: center !important;
 		box-sizing: border-box !important;
 		margin: 0 !important;
-		border-radius: 0 !important;
 		border: none !important;
+		border-radius: 0 !important;
 		padding: 0 !important;
 		width: var(--titlebar-button-width) !important;
 		min-width: var(--titlebar-button-width) !important;
@@ -305,43 +354,61 @@
 		height: 100% !important;
 	}
 	#TabsToolbar .titlebar-buttonbox-container .titlebar-button > image,
-	#TabsToolbar .titlebar-buttonbox-container .titlebar-button > .toolbarbutton-icon {
+	#TabsToolbar
+		.titlebar-buttonbox-container
+		.titlebar-button
+		> .toolbarbutton-icon {
 		margin: 0 !important;
 		padding: 0 !important;
 	}
-	:root[sizemode="maximized"] #TabsToolbar .titlebar-buttonbox-container .titlebar-max,
-	:root:not([sizemode="maximized"]) #TabsToolbar .titlebar-buttonbox-container .titlebar-restore {
+	:root[sizemode="maximized"]
+		#TabsToolbar
+		.titlebar-buttonbox-container
+		.titlebar-max,
+	:root:not([sizemode="maximized"])
+		#TabsToolbar
+		.titlebar-buttonbox-container
+		.titlebar-restore {
 		display: none !important;
 	}
 	#unified-extensions-button {
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--ext-offset-win) !important;
 		bottom: auto !important;
 		z-index: 100 !important;
 		height: var(--trailing-button-size) !important;
 	}
-	#navigator-toolbox:has(#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]))
+	#navigator-toolbox:has(
+			#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+		)
 		#unified-extensions-button {
 		right: var(--ext-offset-overflow-win) !important;
 	}
 	#nav-bar-overflow-button {
 		display: none !important;
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--overflow-offset-win) !important;
 		bottom: auto !important;
 		z-index: 100 !important;
 		height: var(--trailing-button-size) !important;
 	}
-	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"]) #nav-bar-overflow-button,
+	#nav-bar:is([overflowing="true"], [nonemptyoverflow="true"])
+		#nav-bar-overflow-button,
 	#nav-bar-overflow-button[overflowing="true"] {
 		display: flex !important;
 	}
 	#PanelUI-button {
 		display: flex !important;
 		position: absolute !important;
-		top: calc((var(--toolbar-height) - var(--trailing-button-size)) / 2) !important;
+		top: calc(
+			(var(--toolbar-height) - var(--trailing-button-size)) / 2
+		) !important;
 		right: var(--panelui-offset-win) !important;
 		bottom: auto !important;
 		justify-content: center !important;
