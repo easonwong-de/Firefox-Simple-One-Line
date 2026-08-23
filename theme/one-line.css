@@ -115,8 +115,8 @@
 }
 
 #urlbar-container {
-	flex: 0 1 240px !important;
-	width: 240px !important;
+	flex: 0 1 360px !important;
+	width: 360px !important;
 	min-width: 100px !important;
 }
 
