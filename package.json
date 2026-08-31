@@ -5,8 +5,8 @@
 	"private": true,
 	"scripts": {
 		"create": "firefox-css-theme create",
-		"start": "firefox-css-theme start", 
-		"profiles": "firefox-css-theme profiles", 
+		"start": "firefox-css-theme start",
+		"profiles": "firefox-css-theme profiles",
 		"save": "firefox-css-theme save",
 		"format": "prettier --write --list-different ."
 	},
