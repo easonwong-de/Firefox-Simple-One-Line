@@ -4,6 +4,29 @@ A simplistic one-liner Firefox CSS theme, targetting Nova UI.
 
 ## Installation
 
+### Using firefox-css-theme
+
+```bash
+git clone https://github.com/easonwong-de/Firefox-Simple-One-Line.git
+cd Firefox-Simple-One-Line
+npm install
+```
+
+If there is only one Firefox profile, run:
+
+```bash
+npm run save
+```
+
+If there are multiple Firefox profiles:
+
+```bash
+npm run profiles
+npx firefox-css-theme save -p <profile name>
+```
+
+### Manual Installation
+
 1. Open Firefox and navigate to `about:config` via the address bar.
 2. Accept the warning prompt and search for `toolkit.legacyUserProfileCustomizations.stylesheets`.
 3. Toggle the preference to `true`.
