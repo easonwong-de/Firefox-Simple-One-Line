@@ -1,12 +1,17 @@
 {
 	"name": "firefox-simple-one-line",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"type": "module",
 	"private": true,
 	"scripts": {
+		"create": "firefox-css-theme create",
+		"start": "firefox-css-theme start", 
+		"profiles": "firefox-css-theme profiles", 
+		"save": "firefox-css-theme save",
 		"format": "prettier --write --list-different ."
 	},
 	"devDependencies": {
+		"firefox-css-theme": "^0.2.2",
 		"prettier": "^3.9.6",
 		"prettier-plugin-css-order": "^2.2.0"
 	},
