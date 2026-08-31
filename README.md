@@ -15,14 +15,14 @@ npm install
 If there is only one Firefox profile, run:
 
 ```bash
-npm run save
+npm run install:theme
 ```
 
 If there are multiple Firefox profiles:
 
 ```bash
 npm run profiles
-npx firefox-css-theme save -p <profile name>
+npm run install:theme -- -p <profile name>
 ```
 
 ### Manual Installation
