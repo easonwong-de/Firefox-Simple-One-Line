@@ -11,7 +11,7 @@
 		"format": "prettier --write --list-different ."
 	},
 	"devDependencies": {
-		"firefox-css-theme": "^0.2.2",
+		"firefox-css-theme": "^0.2.3",
 		"prettier": "^3.9.6",
 		"prettier-plugin-css-order": "^2.2.0"
 	},
