@@ -4,14 +4,12 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"create": "firefox-css-theme create",
 		"start": "firefox-css-theme start",
-		"profiles": "firefox-css-theme profiles",
 		"install:theme": "firefox-css-theme install",
 		"format": "prettier --write --list-different ."
 	},
 	"devDependencies": {
-		"firefox-css-theme": "^0.2.4",
+		"firefox-css-theme": "^0.2.8",
 		"prettier": "^3.9.6",
 		"prettier-plugin-css-order": "^2.2.0"
 	},
