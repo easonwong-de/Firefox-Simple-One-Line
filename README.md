@@ -6,23 +6,18 @@ A simplistic one-liner Firefox CSS theme, targetting Nova UI.
 
 ### Using firefox-css-theme
 
+Clone and install dependencies:
+
 ```bash
 git clone https://github.com/easonwong-de/Firefox-Simple-One-Line.git
 cd Firefox-Simple-One-Line
 npm install
 ```
 
-If there is only one Firefox profile, run:
+Then run:
 
 ```bash
 npm run install:theme
-```
-
-If there are multiple Firefox profiles:
-
-```bash
-npm run profiles
-npm run install:theme -- -p <profile name>
 ```
 
 ### Manual Installation
