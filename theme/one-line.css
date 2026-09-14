@@ -69,7 +69,6 @@
 	height: var(--toolbar-height) !important;
 	min-height: var(--toolbar-height) !important;
 	-moz-window-dragging: drag !important;
-	border-bottom: none !important;
 	background: var(
 		--lwt-accent-color,
 		var(--toolbar-bgcolor, inherit)
