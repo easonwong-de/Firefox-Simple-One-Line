@@ -2,6 +2,8 @@
 
 A simplistic one-liner Firefox CSS theme, targetting Nova UI.
 
+![screenshot](./assets/screenshot.png)
+
 ## Installation
 
 ### Using firefox-css-theme
@@ -30,3 +32,7 @@ npm run install:theme
 6. Inside the profile folder, create a directory named `chrome` if it does not already exist.
 7. Copy `userChrome.css` and the `theme` directory into the `chrome` directory.
 8. Restart Firefox.
+
+## Development
+
+This theme was built entirely using the [Firefox-CSS-Theme MCP](https://github.com/easonwong-de/Firefox-CSS-Theme).
