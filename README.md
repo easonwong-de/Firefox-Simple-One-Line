@@ -6,7 +6,7 @@ A simple one-line Firefox CSS theme, targeting Nova UI.
 
 ## Installation
 
-### Using firefox-css-theme
+### Option A: Using [Firefox-CSS-Theme](https://github.com/easonwong-de/Firefox-CSS-Theme)
 
 Clone and install dependencies:
 
@@ -22,7 +22,7 @@ Then run:
 npm run install:theme
 ```
 
-### Manual Installation
+### Option B: Manual Installation
 
 1. Open Firefox and navigate to `about:config` via the address bar.
 2. Accept the warning prompt and search for `toolkit.legacyUserProfileCustomizations.stylesheets`.
@@ -35,4 +35,4 @@ npm run install:theme
 
 ## Development
 
-This theme was built entirely using the [Firefox-CSS-Theme MCP](https://github.com/easonwong-de/Firefox-CSS-Theme).
+This theme was built entirely using the [Firefox-CSS-Theme MCP](https://github.com/easonwong-de/Firefox-CSS-Theme#mcp-server-usage).
