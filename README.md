@@ -1,6 +1,6 @@
 # Firefox Simple One Line
 
-A simplistic one-liner Firefox CSS theme, targetting Nova UI.
+A simple one-line Firefox CSS theme, targeting Nova UI.
 
 ![screenshot](./assets/screenshot.png)
 
