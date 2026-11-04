@@ -189,6 +189,14 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Bun ###
+.bun/
+.bun-tmp*
+.bun-install/
+.old_modules*
+node_modules.bun
+*.tmp
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
