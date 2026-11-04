@@ -9,6 +9,6 @@
 		"format": "bun fmt"
 	},
 	"devDependencies": {
-		"firefox-css-theme": "^0.2.9"
+		"firefox-css-theme": "^0.3.5"
 	}
 }
