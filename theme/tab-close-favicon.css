@@ -65,3 +65,30 @@
 .tabbrowser-tab:not([pinned]):hover .tab-close-button {
 	display: flex !important;
 }
+
+/* Compact Mode Adjustments */
+:root[uidensity="compact"] .tab-content {
+	padding-inline: 4px !important;
+}
+
+:root[uidensity="compact"] .tab-icon-stack,
+:root[uidensity="compact"] .tab-icon-stack[hidden],
+:root[uidensity="compact"] .tabbrowser-tab:not([image]) .tab-icon-stack,
+:root[uidensity="compact"] .tabbrowser-tab .tab-close-button {
+	margin: 0 2px 0 0 !important;
+	width: 20px !important;
+	min-width: 20px !important;
+	max-width: 20px !important;
+	height: 20px !important;
+	min-height: 20px !important;
+	max-height: 20px !important;
+}
+
+:root[uidensity="compact"] .tabbrowser-tab[pinned] .tab-icon-stack,
+:root[uidensity="compact"] .tabbrowser-tab[pinned]:not([image]) .tab-icon-stack {
+	margin: 0 !important;
+}
+
+:root[uidensity="compact"] .tabbrowser-tab .tab-close-button {
+	padding: 4px !important;
+}

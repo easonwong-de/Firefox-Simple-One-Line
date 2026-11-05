@@ -60,6 +60,13 @@
 	);
 }
 
+:root[uidensity="compact"] {
+	--toolbar-height: 36px;
+	--tab-min-height: 28px !important;
+	--tab-min-width: 60px;
+	--trailing-button-size: 28px;
+}
+
 /* Container & Window Dragging */
 #navigator-toolbox {
 	display: flex !important;
